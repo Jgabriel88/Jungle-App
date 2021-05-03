@@ -11,7 +11,7 @@ RSpec.describe Product, type: :model do
 
     it 'has no name' do  
       @product = Product.new(:name=> nil)
-      @product.valid?
+      @product.valid? 
       expect(@product.errors.full_messages).to include "Name can't be blank" 
     end
     
